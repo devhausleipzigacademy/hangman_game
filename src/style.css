@@ -1,0 +1,14 @@
+body {
+  background-color: aliceblue !important;
+}
+
+#alphabet {
+  display: flex;
+  max-width: 500px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.letter {
+  margin: 10px;
+}
