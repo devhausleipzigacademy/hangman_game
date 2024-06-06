@@ -18,6 +18,7 @@ function createLetterButton(letter: string) {
   id=${letter}>${letter}</button>`;
   // append to alphabetDiv
   alphabetDiv?.appendChild(newLetter);
+  // TODO add EventListener for click that calls 'handleGuess(letter)'
 }
 
 // array of possible words
@@ -33,6 +34,7 @@ function startGame() {
   encryptWord();
 }
 
+// function to show encrypted word at top of page
 function encryptWord() {
   // access div with id 'word'
   const wordDiv = document.getElementById('word');
@@ -42,6 +44,10 @@ function encryptWord() {
   }).join(' ');
   // show word inside of word div
   wordDiv!.innerHTML = `${hiddenWord}`;
+}
+
+function handleGuess() {
+  // disable button after click
 }
 
 startGame();
